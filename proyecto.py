@@ -12,7 +12,7 @@ f.write("m = {};\n".format(M))
 p = list()
 f.write("p = [")
 for j in range(M):
-    pres = randint(1,100)
+    pres = randint(1,1000)
     p.append(pres)
     if j != M - 1:
         f.write("{}, ".format(pres))
@@ -27,9 +27,9 @@ for i in range(N):
         f.write(" | ")
     for j in range(M):
         if (i != N - 1) or (j != M - 1):
-            f.write("{}, ".format(randint(1,int(pres/2))))
+            f.write("{}, ".format(randint(1,10)))
         else:
-            f.write("{}".format(randint(1,int(pres/2)))) 
+            f.write("{}".format(randint(1,10))) 
     f.write("\n")
     if i == N - 1:
         f.write(" |];\n\n")
@@ -41,14 +41,21 @@ for i in range(N):
         f.write(" | ")
     for j in range(M):
         if (i != N - 1) or (j != M - 1):
-            f.write("{}, ".format(randint(1,p[j])))
+            f.write("{}, ".format(randint(1,30)))
         else:
-            f.write("{}".format(randint(1,p[j]))) 
+            f.write("{}".format(randint(1,30))) 
     f.write("\n")
     if i == N - 1:
         f.write(" |];\n\n")
 
 
+f.write("h_p = [")
+for j in range(M):
+    if j != M - 1:
+        f.write("{}, ".format(randint(1,45)))
+    else:
+        f.write(randint(1,30))
+f.write("];\n\n")
 
 
 f.close()
