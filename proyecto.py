@@ -54,7 +54,7 @@ for j in range(M):
     if j != M - 1:
         f.write("{}, ".format(randint(1,45)))
     else:
-        f.write(randint(1,30))
+        f.write(str(randint(1,30)))
 f.write("];\n\n")
 
 
