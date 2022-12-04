@@ -1,7 +1,7 @@
 from random import randint
 import time
 
-f = open("data.dzn","w")
+f = open("data1.dzn","w")
 N = int(input("Valor de N: "))
 M = int(input("Valor de M: "))
 start_time = time.time()
@@ -9,15 +9,12 @@ start_time = time.time()
 f.write("n = {};\n".format(N))
 f.write("m = {};\n".format(M))
 
-p = list()
 f.write("p = [")
 for j in range(M):
-    pres = randint(1,1000)
-    p.append(pres)
     if j != M - 1:
-        f.write("{}, ".format(pres))
+        f.write("{}, ".format(randint(500,1000)))
     else:
-        f.write(str(pres))
+        f.write(str(randint(500,1000)))
 f.write("];\n\n")
 
 f.write("c =\n")
@@ -54,7 +51,7 @@ for j in range(M):
     if j != M - 1:
         f.write("{}, ".format(randint(1,45)))
     else:
-        f.write(str(randint(1,30)))
+        f.write(str(randint(1,45)))
 f.write("];\n\n")
 
 
