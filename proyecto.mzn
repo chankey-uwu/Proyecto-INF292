@@ -1,4 +1,4 @@
-include "data.dzn";
+include "data1.dzn";
 int: n;
 int: m;
 array[1..m] of int: p;

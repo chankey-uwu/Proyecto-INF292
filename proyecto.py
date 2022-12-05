@@ -1,7 +1,7 @@
 from random import randint
 import time
 
-f = open("data1.dzn","w")
+f = open("data.dzn","w")
 N = int(input("Valor de N: "))
 M = int(input("Valor de M: "))
 start_time = time.time()
